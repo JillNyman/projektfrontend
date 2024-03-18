@@ -1,0 +1,74 @@
+$homebody: rgb(244, 159, 81);
+$florence: rgb(247, 204, 173);
+$tropicalbreeze: rgb(149, 199, 194);
+$springwater: rgb(190, 228, 231);
+$flamingopink: rgb(244, 144, 185);
+$tequilasunrise: rgb(255, 212, 229);
+$greytext: #504c49;
+$black: #0d1b2a;
+$bold: 600;
+$platinum: #e0e1dd;
+
+
+//KOMMER SNART I STREAMING-VÄG
+
+.container-carousel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  #header-latest {
+    //display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 3% 0;
+    transition: all 0.25s ease-in;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-top: 3%;  
+    margin-bottom: 3%;
+    //border-color: $tropicalbreeze;
+    background-color: $springwater;
+    border: 10px dotted $tropicalbreeze;
+    font-family: searchResult;
+    font-style: normal;
+  }
+
+  #header-latest h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-family: otherHeader;
+    font-size: 36px;
+    color: darken($greytext, 10%);
+  }
+
+  #header-latest #toplist {
+    width: 100%;
+    display: flex;
+    column-gap: 4%;
+    row-gap: 1%;
+    scroll-behavior: smooth;
+    transition: all 0.25s ease-in;
+    -ms-overflow-style: none;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .toplist-items {
+    scroll-snap-align: center;
+    width: auto;
+    height: auto;    
+    border: 4px solid $homebody;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    
+  }
+
+  .toplist-item:hover {
+    opacity: 0.7;
+  }

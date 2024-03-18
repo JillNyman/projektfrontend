@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.scss">
+    <script src="js/index.js" type="module" ></script>
+    
+</head>
+<body>
+  
+      <header>
+        <h1>FILMKLUBBEN</h1>        
+        <button class="menu-btn open" id="open-menu">
+          <span class="menu-text">MENY</span>
+        </button>
+          
+        <nav id="nav-menu">            
+          <button class="menu-btn close" id="close-menu">
+            <span class="menu-text">STÄNG</span>
+          </button>
+          <ul>
+            <li><a href="index.html">STARTSIDA</a></li>
+            <li><a href=#>POPUP</a></li>
+            <li><a href="#">KATEGORIER</a></li>
+            <li><a href="#">KONTAKT</a></li>
+            <li><a href="#">OM OSS</a></li>
+          </ul>
+        </nav>   
+
+      </header>
+    <div class="container-carousel">
+      
+      <div id="header-latest">  <h3>Kommer snart</h3>      
+        <div id="toplist"></div>
+      </div>
+    </div>
+
+    <div id="test-film">
+      
+      <div class="film-container">
+        <label for="input">SÖK</label>
+        <input type="text" placeholder="Film eller serie" id="input" >
+        <button id="submit">OK</button>  
+
+        <div class="result-container">
+          <div class="results-stream" id="results-stream">
+          </div>
+          <div class="results-tvdb" id="results-tvdb">
+          </div>
+        </div>
+
+        <!--VISA INFO OM FILM-->
+        <div id="show-movie-info">
+          <div class="movie-info" id="movie-info">                   
+          </div>
+        </div>
+
+         <!--VISA INFO OM TV-->
+        <div id="show-tv-info">
+          <div class="tv-info" id="tv-info">        
+          </div>
+          <div class="season-container" id="season-container"></div>  
+        </div>
+      </div>
+    </div>
+       
+
+    <footer class="footer">
+      <div class="bottom-menu">
+        <a href="#"><p><b>Kategorier</b></p></a>
+        <a href="#"><p><b>Senaste nytt</b></p></a>
+        <a href="#"><p><b>Kontakta oss</b></p></a>
+        
+      </div>
+      <div class="bottom-menu-box">          
+        
+        <h3><b>Skapad med hjälp av:</b></h3>
+        <div id="collaboration">
+          <div id="part-one">
+        <p><a href="https://www.justwatch.com/us/JustWatch-Streaming-API">Just Watch</a></p>
+
+        <p><a href="https://www.watchmode.com/">WatchMode</a></p>
+
+        <p><a href="https://www.themoviedb.org">TMDB</a></p>
+
+          <p><a href="https://www.omdbapi.com/">OMDB</a></p></div>
+        
+      <p><b>Copyright 2024</b></p>
+    </footer>
+  
+  
+      
+  </body>
+</html>

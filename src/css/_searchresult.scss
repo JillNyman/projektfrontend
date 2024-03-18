@@ -1,0 +1,219 @@
+$homebody: rgb(244, 159, 81);
+$florence: rgb(247, 204, 173);
+$tropicalbreeze: rgb(149, 199, 194);
+$springwater: rgb(190, 228, 231);
+$flamingopink: rgb(244, 144, 185);
+$tequilasunrise: rgb(255, 212, 229);
+$greytext: #504c49;
+$black: #0d1b2a;
+$bold: 600;
+$platinum: #e0e1dd;
+
+#submit{
+    display: block;
+    //width: 80%;
+    font-family: searchResult;
+    width: 90%;
+    font-size: 20px;
+    font-weight: 800;
+    //display: flex;
+    text-align: center;
+    padding: 12px 25px;
+    background-color: lighten($florence, 10%);  
+    border: $flamingopink dotted 4px;
+    border-radius: 15px;
+    color: $greytext;
+    margin: auto;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: $tequilasunrise;
+    color: $black;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+    font-style: bold;
+}
+
+#results-tvdb{
+    cursor: pointer;
+}
+
+#tv-info{
+    width: 100%;
+}
+
+
+.results-movie-item, .results-tv-item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    //flex-wrap: wrap;
+    border-top: 4px solid $flamingopink;
+    padding-top: 10px;
+}
+
+.results-movie-item:hover, .results-tv-item:hover{
+    cursor: pointer;
+}
+
+.results-item-info{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.title-div{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.airdate-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.results-item-info p{    
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.results-item-info h4{    
+    margin: 5px;
+}
+
+.results-item-thumbnail{
+    width: 45px;
+    margin-right: 10px;
+}
+
+
+.film-container label{
+    display: flex;        
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    justify-content: center;
+    font-family: otherHeader;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#input{
+    display: block;
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
+    border: 4px solid $flamingopink;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.misc-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: -40px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 370px) {
+    .misc-info{
+    flex-direction: column;
+}
+}
+
+.misc-info li{
+    float: left;
+    list-style-type: none;
+
+}
+
+#season-container{
+    display: block;
+}
+
+.seasons-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-top: 4px solid $flamingopink;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.season-poster{
+    display: block;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 420px) {
+.seasons{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+}
+@media only screen and (max-width: 419px) {
+    .seasons-div{
+        
+        flex-direction: column;
+    }
+
+    .season-poster{
+        position: relative;
+        max-width: 92px;
+        margin-top: 20px;
+        
+    }
+}
+
+.tv-poster{
+    display: block;
+    margin: 20px auto;
+}
+
+.actors{
+    width: 100%;
+    text-align: start;
+    margin-left: 0;
+}
+
+.episode-details{
+    border-top: 4px solid $tropicalbreeze;
+}
+
+.season-details{
+    border-top: 4px solid $tropicalbreeze;
+    margin-top: 20px;
+}
+
+.season-poster-details{
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.streamer-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.streamer-list img{
+    margin-right: 10px;
+    margin-top: 10px;
+}

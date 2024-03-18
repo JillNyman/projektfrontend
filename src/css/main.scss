@@ -1,0 +1,243 @@
+@use "frames";
+@use "searchresult";
+@use "comingsoon";
+
+*{
+  box-sizing: border-box;
+}
+
+$homebody: rgb(244, 159, 81);
+$florence: rgb(247, 204, 173);
+$tropicalbreeze: rgb(149, 199, 194);
+$springwater: rgb(190, 228, 231);
+$flamingopink: rgb(244, 144, 185);
+$tequilasunrise: rgb(255, 212, 229);
+$greytext: #504c49;
+$black: #0d1b2a;
+$platinum: #e0e1dd;
+
+@font-face {
+  font-family: 'bigHeader';
+  src: url('./fonts/Showtime.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'searchResult';
+  src: url('./fonts/FONT_BIGJOHN/BigJohnPRO-Regular.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'otherHeader';
+  src: url('./fonts/FONT_HEADER_OTHER/budmo\ jiggler.ttf');
+  font-style: normal;
+}
+
+
+/*HEADER*/
+header{
+    width: 95%;
+    height: 250px;
+    display: block;
+    border: 15px dotted;
+    border-color: $flamingopink;    
+    background-color: $tequilasunrise;  
+    margin: 3% auto 5% auto;  
+    text-align: center;    
+}
+
+header h1{
+    font-family: bigHeader;       
+    font-weight: 800;
+    color: $black;
+    text-shadow: -1px 1px 0 lighten($greytext, 20%),
+    1px 1px 0 $greytext,
+    0 0 0 $greytext,
+    -1px -1px 0 lighten($greytext, 20%);
+    font-size: 90px;
+    margin-top: 35px;
+}
+
+@media only screen and (max-width: 700px) {
+  header h1{
+    font-size: 70px;
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  header h1{
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  header h1{
+    font-size: 50px;
+    //font-family: otherHeader;
+    text-shadow: none;
+  }
+  header{
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  header h1{
+    font-size: 40px;
+  }
+  header{
+    height: 200px;
+  }
+}
+
+/* Meny */
+nav {
+  font-family: searchResult;
+    background-color: $springwater;
+    box-shadow: $tropicalbreeze;
+    font-size: 1.4em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    display: hidden;
+    font-weight: bold;  
+  
+  ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0 0 0 auto;
+    padding: 0;
+  }
+  
+  li {
+    padding: 0.8em 0;
+  }
+  
+  a {
+    text-decoration: none;
+    padding: 0 1em;     
+  }  
+} 
+  
+nav li:hover{
+  background-color: $tropicalbreeze;
+  color: $platinum;
+  cursor: pointer;
+}
+
+nav li:visited{
+  font-style: italic;
+  color: $greytext;
+}
+
+nav a:visited{
+  color:$greytext;
+  font-style: italic;
+}
+  
+  /*Meny-knapp, öppnameny*/
+  .menu-btn {
+    font-family: searchResult;
+    font-style: normal;
+    font-size: 20px;
+    display: block;
+    align-items: center;
+    padding: 16px 30px;
+    background-color: $florence;  
+    border: $flamingopink solid 4px;
+    border-radius: 15px;
+    color: $greytext;
+    cursor: pointer; 
+  }
+
+  #open-menu {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    display: block;
+  }
+  
+  #close-menu{      
+    width: 80%;
+    //padding: 16px 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .menu-btn:hover, .menu-text:hover {
+    background-color: $tequilasunrise;
+    color: $black;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.421);
+    font-style: bold;
+  }
+
+  footer{
+    width: 95%;
+    background-color: $florence;
+    border: 4px solid $homebody;
+    padding: 3%;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: searchResult;
+  }
+
+  footer p{
+    margin: 10px 10px 0 auto;
+   
+  }
+
+  a:visited, p:visited{
+    color: $greytext;
+    text-decoration: none;
+  }
+
+  .bottom-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: searchResult;
+    
+  }
+
+  .bottom-menu-box{
+    width: 100%;
+    font-family: searchResult;
+    border: 4px dotted $flamingopink;
+    background-color: $tequilasunrise;    
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  #collaboration{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 160px;
+    justify-content: space-between;
+    text-align: left;
+    
+   
+  }
+
+  #collaboration #part-one, #collaboration #part-two{
+    margin-left: 40px;
+  }
+
+  .bottom-menu-box h4{
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .hide-search-list {
+    display: none;
+  }
+  

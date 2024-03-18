@@ -1,0 +1,36 @@
+$homebody: rgb(244, 159, 81);
+$florence: rgb(247, 204, 173);
+$tropicalbreeze: rgb(149, 199, 194);
+$springwater: rgb(190, 228, 231);
+$flamingopink: rgb(244, 144, 185);
+$tequilasunrise: rgb(255, 212, 229);
+$greytext: #504c49;
+$black: #0d1b2a;
+$bold: 600;
+$platinum: #e0e1dd;
+
+#test-film{
+    display: block;    
+    width: 95%;
+    height: auto;
+    margin: 5% auto;
+    border: 4px solid;
+    border-color: $tropicalbreeze;
+    background-color: $tequilasunrise;   
+    font-family: searchResult;
+}
+
+.film-container{
+    display: block;
+    width: 85%;
+    border: 4px solid;
+    border-color: $flamingopink;
+    margin: 5% auto;
+    background-color: $florence;
+    padding: 4%;
+}
+
+.result-container{
+    margin-top: 20px;  
+}
+
